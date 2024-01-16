@@ -17,8 +17,8 @@ class PostController extends Controller
     {
         DB::enableQueryLog();
         $posts = Post::all();
-        $queryLog = DB::getQueryLog();
-        dd($queryLog);
+        // $queryLog = DB::getQueryLog();
+        // dd($queryLog);
         return view('posts.index', compact('posts'));
     }
 

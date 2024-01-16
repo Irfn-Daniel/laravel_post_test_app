@@ -55,19 +55,19 @@
     </div> --}}
 
     <table class="table">
-        <thead>
+        <thead class=" ">
             <tr>
-                <th>Title</th>
-                <th>Body</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
                 <!-- Add more columns as needed -->
             </tr>
         </thead>
         <tbody>
             @foreach($posts as $post)
                 <tr>
-                    <td>{{ $post->title}}</td>
+                    <td scope="row">{{ $post->title}}</td>
                     <td>{{ $post->body }}</td>
                     <td><a href="{{ route('posts.edit', $post->id) }}"
                         class="btn btn-primary btn-sm">Edit</a></td>
@@ -81,7 +81,6 @@
             @endforeach
         </tbody>
     </table>
-    @php dd($posts); @endphp
 </body>
 
 </html>
