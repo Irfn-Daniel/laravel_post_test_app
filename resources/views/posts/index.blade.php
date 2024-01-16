@@ -55,7 +55,7 @@
     </div> --}}
 
     <table class="table">
-        <thead class=" ">
+        <thead class=" git">
             <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Body</th>
