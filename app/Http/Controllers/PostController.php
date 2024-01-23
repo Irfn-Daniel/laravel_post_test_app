@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class PostController extends Controller
 {
@@ -17,8 +18,13 @@ class PostController extends Controller
     {
         DB::enableQueryLog();
         $posts = Post::all();
-        // $queryLog = DB::getQueryLog();
-        // dd($queryLog);
+        //$queryLog = DB::getQueryLog();
+        
+        //log::info($posts->toSql());
+        log::info(DB::getQueryLog());
+        log::info("This is the data ==>" . $posts);
+
+
         return view('posts.index', compact('posts'));
     }
 
