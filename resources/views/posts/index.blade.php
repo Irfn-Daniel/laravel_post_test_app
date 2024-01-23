@@ -14,7 +14,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
-            <a class="navbar-brand h1" href={{ route('posts.index') }}>This is a Training Website</a>
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Training Website or smth
+              </a>
             <div class="justify-end ">
                 <div class="col ">
                     <a class="btn btn-sm btn-success" href={{ route('posts.create') }}>Add Post</a>
