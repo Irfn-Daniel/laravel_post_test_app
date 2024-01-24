@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Training Website or smth
+                <b>CRUDPosts</b>
               </a>
             <div class="justify-end ">
                 <div class="col ">
